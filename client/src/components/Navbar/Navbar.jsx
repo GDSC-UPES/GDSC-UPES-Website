@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./Navbar.module.css";
+import { HiMiniMoon } from "react-icons/hi2";
 
 const Navbar = () => {
   return (
@@ -20,7 +21,7 @@ const Navbar = () => {
           <Link to="/contact">Contact</Link>
         </li>
       </ul>
-      <button className={styles.button}></button>
+      <button className={styles.button}><HiMiniMoon/></button>
     </nav>
   );
 };
