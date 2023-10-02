@@ -33,5 +33,3 @@ We follow a branching strategy where all contributions are made to the `developm
    git add .
    git commit -m "Your detailed commit message"
    git push origin development
-
-
