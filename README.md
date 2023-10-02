@@ -2,6 +2,10 @@
 
 Welcome to the official repository for the UPES GDSC 2023 official website. This repository hosts the source code and design files for the website.
 
+## Tech Stack
+
+MERN Stack
+
 ## UI/UX Design Files
 
 The UI/UX design files for the website have already been uploaded to this repository. You can find them in the [`ui-ux-design`](./ui-ux-design) directory.
