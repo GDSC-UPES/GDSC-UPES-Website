@@ -20,7 +20,7 @@ We welcome contributions from the community to enhance and improve the website. 
 
 3. Clone the forked repository to your local machine:
    ```bash
-   git clone https://github.com/GDSC-UPES/GDSC-UPES-Website.git
+   git clone https://github.com/Your-Github-Username/GDSC-UPES-Website.git
 
 ## Committing Changes to the Development Branch
 
