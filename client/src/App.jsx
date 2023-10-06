@@ -1,11 +1,11 @@
 import React from "react";
 import { BrowserRouter , Route, Routes } from "react-router-dom";
 
-// Import your pages or components for each route
-import Home from "./pages/Home";
-import Events from "./components/Events/Event.jsx";
-import Team from "./pages/Team";
-import Contact from "./pages/Contact";
+import Home from "./pages/Home"
+import Events from "./pages/Events"
+import Team from "./pages/Team"
+import Contact from "./pages/Contact"
+import Layout from "./Layout/Layout";
 
 function App() {
       return (

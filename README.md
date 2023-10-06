@@ -37,14 +37,3 @@ We follow a branching strategy where all contributions are made to the `developm
    git add .
    git commit -m "Your detailed commit message"
    git push origin development
-
-## Design in Figma
-
-Explore the design of the GDSC UPES website on Figma:
-[Figma - GDSC UPES Website Design](https://www.figma.com/file/9fJtrEvFUEkbuVijMA9d31/GDSC-UPES-(Copy)?type=design&node-id=8-198&mode=design)
-
-## Join our Discord Server
-
-For discussions and communication, join our Discord server:
-[GDSC UPES Discord Server](https://discord.gg/JEgKRvavWk)
-
