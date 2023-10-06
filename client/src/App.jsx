@@ -10,18 +10,18 @@ import Team from "./pages/Team";
 import Contact from "./pages/Contact";
 
 function App() {
-  return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" exact component={Home} />
-        <Route path="/events" component={Events} />
-        <Route path="/team" component={Team} />
-        <Route path="/contact" component={Contact} />
-      </Routes>
-      <Footer />
-    </Router>
-  );
+      return (
+        <Router>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/events" element={<Events />} />
+            <Route path="/team" element={<Team />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+          <Footer />
+        </Router>
+      );
 }
 
 export default App;
