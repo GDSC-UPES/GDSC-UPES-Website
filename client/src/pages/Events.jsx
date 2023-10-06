@@ -27,7 +27,7 @@ const EventDetailHero = ({eventImageURL,eventName,eventDescription,eventDate,eve
     <div className={ eventDetailHeroStyles.container}>
        <div className={ eventDetailHeroStyles.gridContainer}>
         <div className={ eventDetailHeroStyles.image} >
-          <img src={require(`${eventImageURL}`)}></img>
+          <img src={require(`${eventImageURL}`)} alt='event logo'></img>
         </div>
         <div className={ eventDetailHeroStyles.containerHoldingEventDetails}>
         <div className={ eventDetailHeroStyles.eventName}>
@@ -52,7 +52,7 @@ const EventDetailHero = ({eventImageURL,eventName,eventDescription,eventDate,eve
             height:'50%'
           }}>
              <div className={ eventDetailHeroStyles.footerContent}>
-                <img src={require('./assets/Calendar (1).png')} className={ eventDetailHeroStyles.pngimage}></img>
+                <img src={require('./assets/Calendar (1).png')} className={ eventDetailHeroStyles.pngimage} alt='calander'></img>
              </div>
             </div>
             <div style={{
@@ -85,7 +85,7 @@ const EventDetailHero = ({eventImageURL,eventName,eventDescription,eventDate,eve
             height:'50%'
           }}>
                <div className={ eventDetailHeroStyles.footerContent}>
-               <img src={require('./assets/Clock (2).png')} className={ eventDetailHeroStyles.pngimage}></img>
+               <img src={require('./assets/Clock (2).png')} className={ eventDetailHeroStyles.pngimage} alt='clock'></img>
               </div>
             </div>
             
@@ -107,7 +107,7 @@ const EventDetailHero = ({eventImageURL,eventName,eventDescription,eventDate,eve
             height:'50%'
           }}>
               <div className={ eventDetailHeroStyles.footerContent}>
-              <img src={require('./assets/Map Marker (1).png')} className={ eventDetailHeroStyles.pngimage}></img>
+              <img src={require('./assets/Map Marker (1).png')} className={ eventDetailHeroStyles.pngimage} alt='map'></img>
               </div>
             </div>
             <div style={{
