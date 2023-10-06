@@ -8,18 +8,18 @@ import Contact from "./pages/Contact"
 import Layout from "./Layout/Layout";
 
 function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
-          <Route path="/" element={<Layout/>}>
-              <Route index element={<Home/>}/>
-              <Route path="/events" element={<Events/>} />
-              <Route path="/team" element={<Team/>} />
-              <Route path="/contact" element={<Contact/>} />
-          </Route>
-      </Routes>
-    </BrowserRouter>
-  );
+      return (
+        <Router>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/events" element={<Events />} />
+            <Route path="/team" element={<Team />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+          <Footer />
+        </Router>
+      );
 }
 
 export default App;
