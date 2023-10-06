@@ -1,5 +1,5 @@
 import React from "react";
-import Events_Card from "./components/Events_Card";
+import Eventscard from "./components/Eventscard";
 import EventsData from "./data/EventsData";
 
 
@@ -8,7 +8,7 @@ export default function Event() {
     console.log(val.template && "correct");
     return (
       <>
-      {val.template && val.events_on && val.event_name ? <Events_Card
+      {val.template && val.events_on && val.event_name ? <Eventscard
         template={val.template}
         events_on={val.events_on}
         event_name={val.event_name}
