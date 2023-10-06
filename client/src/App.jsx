@@ -1,27 +1,27 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./components/Navbar/Navbar";
-import Footer from "./components/Footer/Footer";
+import { BrowserRouter , Route, Routes } from "react-router-dom";
 
-// Import your pages or components for each route
-import Home from "./pages/Home";
-import Events from "./pages/Events";
-import Team from "./pages/Team";
-import Contact from "./pages/Contact";
+import Home from "./pages/Home"
+import Events from "./pages/Events"
+import Team from "./pages/Team"
+import Contact from "./pages/Contact"
+import Layout from "./Layout/Layout";
 
 function App() {
-  return (
-    <Router>
-      <Navbar/>
-      <Routes>
-        <Route path="/" exact Component={Home} />
-        <Route path="/events" Component={Events} />
-        <Route path="/team" Component={Team} />
-        <Route path="/contact" Component={Contact} />
-      </Routes>
-      <Footer />
-    </Router>
-  );
+
+      return (
+        <Router>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/events" element={<Events />} />
+            <Route path="/team" element={<Team />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+          <Footer />
+        </Router>
+      );
+
 }
 
 export default App;

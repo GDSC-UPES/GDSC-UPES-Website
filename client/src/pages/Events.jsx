@@ -1,3 +1,4 @@
+
 import React from 'react'
 import  eventDetailHeroStyles from './eventStyles/EventHeroStyles.module.css'
 
@@ -149,3 +150,4 @@ const EventDetailHero = ({eventImageURL,eventName,eventDescription,eventDate,eve
   )
 }
 export default Events
+
