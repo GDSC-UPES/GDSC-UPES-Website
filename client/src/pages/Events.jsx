@@ -4,17 +4,11 @@ import  eventDetailHeroStyles from './eventStyles/EventHeroStyles.module.css'
 const Events = () => {
   return (
     <div>
-       <EventDetailHero eventImageURL={'./assets/image 41.png'} eventName={'FigmaOmbaLomba'}  eventDescription = {'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad tenetur, temporibus possimus molestiae nostrum dolorum beatae quae dicta ipsa, consequuntur, ratione in tempora exercitationem quo. Commodi neque numquam error eius odio obcaecati? aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa AAAAAAAAAAAAAAAAA A         A A A A SDAWDA ASD AGASD ASFG qe asfaffaffafascacadvadvadadvava'} eventDate={'05 Oct - 10 Oct'} eventTime={'10:00 AM to 5:00 PM'} eventVenue={'11th Block'} eventYear={'2023'} eventLocation={'UPES Bidholi'}></EventDetailHero>
+       <EventDetailHero eventImageURL={'./assets/image 41.svg'} eventName={'Figma Foombaloomba'}  eventDescription = {'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad tenetur, temporibus possimus molestiae nostrum dolorum beatae quae dicta ipsa, consequuntur, ratione in tempora exercitationem quo. Commodi neque numquam error eius odio obcaecati? aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa AAAAAAAAAAAAAAAAA A         A A A A SDAWDA ASD AGASD ASFG qe asfaffaffafascacadvadvadadvava'} eventDate={'05 Oct - 10 Oct'} eventTime={'10:00 AM to 5:00 PM'} eventVenue={'11th Block'} eventYear={'2023'} eventLocation={'UPES Bidholi'}></EventDetailHero>
     </div>
    
   )
 }
-/*
-  all the data to be changed between event's is mapped out
-  pass the data to get the event detail prop
-  
-*/
-
 const EventDetailHero = ({eventImageURL,eventName,eventDescription,eventDate,eventYear,eventVenue,eventLocation,eventTime}) => {
   
   function handleWorkshopClick (){
@@ -24,7 +18,7 @@ const EventDetailHero = ({eventImageURL,eventName,eventDescription,eventDate,eve
     console.log('register is clicked');
   }
   return (
-    <div className={ eventDetailHeroStyles.container}>
+    
        <div className={ eventDetailHeroStyles.gridContainer}>
         <div className={ eventDetailHeroStyles.image} >
           <img src={require(`${eventImageURL}`)} alt='event logo'></img>
@@ -40,12 +34,30 @@ const EventDetailHero = ({eventImageURL,eventName,eventDescription,eventDate,eve
           </button>
         </div>
         <div className={ eventDetailHeroStyles.description}>
+          <p>
           {eventDescription}
+          </p>
+         
         </div>
-        <div className={ eventDetailHeroStyles.registerContainer}>
+        <div className={eventDetailHeroStyles.sidebysideButtons}>
+        
+        <div className={ eventDetailHeroStyles.sidebysideButtonsregisterContainer}>
           <button className={ eventDetailHeroStyles.registerButton} onClick={handleRegisterClick}>Register</button>
         </div>
+
+        <div className={ eventDetailHeroStyles.sidebysideButtonsworkshopContainer}>
+          <button className={ eventDetailHeroStyles.workshopButton} onClick={handleWorkshopClick}>Workshop</button>
         </div>
+        
+        </div>
+        <div className={eventDetailHeroStyles.registerContainer} onClick={handleRegisterClick}>
+          <div className={eventDetailHeroStyles.registerButton}>
+            Register
+          </div>
+        </div>
+        
+        </div>
+       
         <div className={ eventDetailHeroStyles.footer}>
           <div className={ eventDetailHeroStyles.ColumnFooter}>
             <div style={{
@@ -132,7 +144,7 @@ const EventDetailHero = ({eventImageURL,eventName,eventDescription,eventDate,eve
             </div>
           </div>
         </div>
-       </div>
+      
     </div>
   )
 }

@@ -1,36 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@1,200&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;1,6..12,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@1,200&family=Nunito&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;1,6..12,200&display=swap');
 
-.container{
-    height:95vh;
-    width:99.5vw;
-    background-color:#cde4ff;
-    display:grid;
-    margin:0 0.25vw;
-    border-radius:10px;
-    padding: 15vh 7vw 7vh 7vw;
-   
-}
 
 .image{
-    
         grid-column-start:2;
         grid-column-end:4;
         grid-row-start:1;
         grid-row-end:6;
         height:100%;
         width:100%;
-        text-align: center;
-        padding-top: 5vh;
-        padding-left: 5vw;
-      
+    }
+html body{
+    margin: 0;
+    padding: 0;
+   
 }
 
-
 .gridContainer{
-    display:grid;
+    height:95%;
+    width:100%;
+    background-color:#cde4ff;
+    
+    margin:0 0.25vw;
+    border-radius:10px;
+    padding: 15vh 7vw 7vh 7vw;
+   
 
-  height:100%;
-  width:100%;
+  
   grid-template-columns:repeat(12, 8.33%);
   grid-template-rows:repeat(14 ,7.14%);
 
@@ -38,7 +33,7 @@
 
 .eventName{
             font-size: 5vh;
-            font-family:'Nunito Sans', sans-serif;
+            font-family: 'Nunito Sans', sans-serif;
             font-weight: bolder;
             display: flex;
             
@@ -59,28 +54,17 @@
     font-size: 2.3vh;
 }
 .workshopContainer{
-       
-          
-         
           font-family: 'Nunito Sans', sans-serif;
 }
 .description{
           display: flex;
-      
           font-size: 2.5vh ;
-
-          
           width:100%;
-      
-          
           font-family: 'Nunito Sans', sans-serif;
-          
+          overflow: auto;
+          background-color: #FCF8D2;
 }
-.registerContainer{
-         
-          
-         
-}
+
 .registerButton{
     background-color: #007bff;
     color: #fff;
@@ -91,7 +75,9 @@
     font-family: 'Nunito Sans', sans-serif;
     cursor: grab;
 }
-
+.registerContainer{
+    display: flex;
+}
 .footer{
           grid-column-start:1;
           grid-column-end:14;
@@ -120,9 +106,7 @@
     
 }
 
-.pngimage{
-    margin-top: 2vh;
-}
+
 
 .footerText1{
    
@@ -158,3 +142,82 @@
     justify-content: space-between;
 
 }
+.sidebysideButtons{
+   display:grid;
+   padding-top: 2.5vh;
+    
+}
+.sidebysideButtonsregisterContainer{
+   grid-column-start: 1;
+   grid-column-end: 2;
+   grid-row-start: 1;
+   grid-row-end: 2;
+   display: flex;
+   
+}
+.sidebysideButtonsworkshopContainer{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2 ;
+    
+
+}
+.sidebysideButtonsregisterContainer .registerButton{
+ 
+    margin: 0 auto;
+    margin-right: 1vw;
+}
+.sidebysideButtonsworkshopContainer .workshopButton{
+
+    margin-left: 1vw;
+  
+}
+
+
+ @media screen and (max-width: 768px) {
+   .gridContainer{
+    display:flex;
+    flex-direction: column;
+    height: 200%;
+    justify-content: space-between;
+    padding:5vh 3vw 10vh 3vw;  
+}
+    .image{
+        text-align: center;
+    
+        
+    }
+   .footerText1{
+    font-size: 2vh;
+   }
+   .footerText2{
+    font-size: 1.5vh;
+   }
+   .eventName{
+    font-size: 3vh;
+    align-self: center;
+    margin: 2vh;
+   }
+   .workshopContainer{
+    display: none;
+   }
+   .registerContainer{
+    display: none;
+   }
+}
+
+@media screen and (min-width: 769px) {
+    .gridContainer{
+        display: grid;
+      
+    }
+    .sidebysideButtons{
+        display: none;
+    }
+    .image{
+        margin-left: 5vw;
+        margin-top: 5vh;
+    }
+} 
+

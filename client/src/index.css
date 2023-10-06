@@ -15,3 +15,31 @@
   --green-color-light: hsl(151, 87%, 90%);
   --yellow-color-light: hsl(45, 97%, 90%);
 }
+
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 6px; 
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 8px; 
+  width: 6px;
+}
+
+
+::-webkit-scrollbar-track:hover {
+  background: #ddd; 
+}
