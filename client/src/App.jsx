@@ -1,7 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./components/Navbar/Navbar";
-import Footer from "./components/Footer/Footer";
+import { BrowserRouter , Route, Routes } from "react-router-dom";
 
 // Import your pages or components for each route
 import Home from "./pages/Home";
