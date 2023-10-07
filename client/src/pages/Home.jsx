@@ -2,7 +2,10 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+      <p className='font-bold'>Home</p>
+      
+    </div>
   )
 }
 
