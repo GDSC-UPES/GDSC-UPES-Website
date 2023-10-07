@@ -1,11 +1,14 @@
 import React from "react";
-import { BrowserRouter , Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Home from "./pages/Home"
 import Events from "./pages/Events"
 import Team from "./pages/Team"
 import Contact from "./pages/Contact"
-import Layout from "./Layout/Layout";
+
+
+import Footer from "./components/Footer/Footer";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
 
@@ -13,10 +16,10 @@ function App() {
         <Router>
           <Navbar />
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/events" element={<Events />} />
-            <Route path="/team" element={<Team />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/" Component={Home} />
+            <Route path="/events" Component={Events} />
+            <Route path="/team" Component={Team } />
+            <Route path="/contact" Component={Contact} />
           </Routes>
           <Footer />
         </Router>
