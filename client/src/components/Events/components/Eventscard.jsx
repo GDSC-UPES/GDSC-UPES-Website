@@ -1,13 +1,9 @@
 import React, { useState } from "react";
-import Button from "./Button";
 import { Link } from "react-router-dom";
 import "../Event.css"
 
 export default function Events_Card(props) {
   const [completed, setcompleted] = useState(false);
-  const OnClickButton = () => {
-    setcompleted(!completed);
-  };
 
   return (
     <>
