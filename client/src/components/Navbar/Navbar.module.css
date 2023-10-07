@@ -1,17 +1,20 @@
 .navbar {
+
     color: #000;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 10px;
     padding: 10px 20px;
+
 }
 
 .logo {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .navLinks {
+
     list-style: none;
     display: flex;
     padding : 0 0 0 40vw; 
@@ -26,50 +29,51 @@
     border-radius:20px;
     transition: all 0.3s ease 0s;
     cursor: pointer;
+
 }
 
-.navLink a{
-    text-decoration: none;
-    color: #000;
+.navLink:hover::before {
+  transform: scaleX(1);
 }
 
 .navLink:hover {
-    transform: translateY(-2px);
+  transform: translateY(-2px);
 }
 
 .navLink:active {
-    background-color: blue;
+  background-color: blue;
 }
 
 .navLink:nth-child(1) {
-    border-color: var(--red-color);
+  border-color: var(--red-color);
 }
 .navLink:nth-child(1):hover {
-    background-color: var(--red-color-light);
+  background-color: var(--red-color-light);
 }
 
 .navLink:nth-child(2) {
-    border-color: var(--blue-color);
+  border-color: var(--blue-color);
 }
 .navLink:nth-child(2):hover {
-    background-color: var(--blue-color-light);
+  background-color: var(--blue-color-light);
 }
 
 .navLink:nth-child(3) {
-    border-color: var(--green-color);
+  border-color: var(--green-color);
 }
 .navLink:nth-child(3):hover {
-    background-color: var(--green-color-light);
+  background-color: var(--green-color-light);
 }
 
 .navLink:nth-child(4) {
-    border-color: var(--yellow-color);
+  border-color: var(--yellow-color);
 }
 .navLink:nth-child(4):hover {
-    background-color: var(--yellow-color-light);
+  background-color: var(--yellow-color-light);
 }
 
 .button {
+
     background-color:#000;
     width: 2vw;
     height: 2vw;
@@ -85,4 +89,5 @@
     .navLinks{
         padding-left:0;
     }
+
 }
