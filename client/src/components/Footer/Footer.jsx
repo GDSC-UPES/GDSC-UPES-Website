@@ -13,37 +13,39 @@ const Footer = () => {
         <p className={styles.para}>Connect with us</p>
 
         <div className={styles.socialMedia}>
-          <Link to="https://twitter.com" className={styles.socialMediaIcon}>
+          <Link
+            to="https://twitter.com"
+            className={`${styles.socialMediaIcon} ${styles.twitter}`}
+          >
             <FaSquareXTwitter />
           </Link>
           <Link
             to="https://instagram.com/"
-            className={styles.socialMediaIcon}
+            className={`${styles.socialMediaIcon} ${styles.instagram}`}
           >
             <RiInstagramLine />
           </Link>
           <Link
             to="https://linkedin.com/"
-            className={styles.socialMediaIcon}
+            className={`${styles.socialMediaIcon} ${styles.linkedin}`}
           >
             <RiLinkedinBoxLine />
           </Link>
           <Link
             to="https://facebook.com/"
-            className={styles.socialMediaIcon}
+            className={`${styles.socialMediaIcon} ${styles.facebook}`}
           >
             <RiFacebookBoxLine />
           </Link>
           <Link
             to="https://hashnode.com/"
-            className={styles.socialMediaIcon}
+            className={`${styles.socialMediaIcon} ${styles.hashnode}`}
           >
             <SiHashnode />
           </Link>
           <Link
             to="https://github.com/"
-            className={styles.socialMediaIcon}
-          >
+            className={`${styles.socialMediaIcon} ${styles.github}`}>
             <SiGithub />
           </Link>
         </div>

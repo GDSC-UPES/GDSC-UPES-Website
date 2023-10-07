@@ -1,25 +1,62 @@
-import React from "react";
-import { BrowserRouter , Route, Routes } from "react-router-dom";
 
-import Home from "./pages/Home"
-import Events from "./pages/Events"
-import Team from "./pages/Team"
-import Contact from "./pages/Contact"
-import Layout from "./Layout/Layout";
+import React,{useState,useEffect} from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 
+// Import your pages or components for each route
+import Home from "./pages/Home";
+import Events from "./pages/Events";
+import Team from "./pages/Team";
+import Contact from "./pages/Contact";
+import "./App.css";
 function App() {
-      return (
-        <Router>
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/events" element={<Events />} />
-            <Route path="/team" element={<Team />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-          <Footer />
-        </Router>
-      );
+  const[isloading,setIsLoading]=useState(true);
+  useEffect(()=>{
+    setTimeout(()=>{
+      setIsLoading(false);
+    },1000)
+  },[]);
+  return (
+    <Router>
+      <Navbar />
+      {isloading ? (
+         <div className="loading">
+          <svg viewBox="0 0 100 100">
+            <circle
+              cx="50"
+              cy="50"
+              r="45"
+              stroke="black"
+              strokeWidth="10"
+              strokeDasharray="150"
+              strokeDashoffset="150"
+              fill="none"
+            >
+               <animateTransform
+                attributeName="transform"
+                attributeType="XML"
+                type="rotate"
+                from="0 50 50"
+                to="360 50 50"
+                dur="1s"
+                repeatCount="indefinite"
+              />
+            </circle>
+          </svg>
+        </div>
+      ) : (
+        <Routes>
+          <Route path="/" exact component={Home} />
+          <Route path="/events" component={Events} />
+          <Route path="/team" component={Team} />
+          <Route path="/contact" component={Contact} />
+        </Routes>
+      )}
+      <Footer />
+    </Router>
+  );
+
 }
 
 export default App;
