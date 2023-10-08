@@ -90,6 +90,7 @@
 }
 a:-webkit-any-link {
     text-decoration: none;
+    color: #000;
 }
 @media screen and (max-width:769px) {
     .navLinks{
