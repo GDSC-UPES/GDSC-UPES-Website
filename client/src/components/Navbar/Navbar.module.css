@@ -88,7 +88,9 @@
     position: relative;
     left: 11vw;
 }
-
+a:-webkit-any-link {
+    text-decoration: none;
+}
 @media screen and (max-width:769px) {
     .navLinks{
         padding-left:20vw;
