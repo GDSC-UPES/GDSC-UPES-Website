@@ -26,8 +26,8 @@ html body{
    
 
   
-  grid-template-columns:repeat(12, 8.33%);
-  grid-template-rows:repeat(14 ,7.14%);
+    grid-template-columns:repeat(12, 8.33%);
+    grid-template-rows:repeat(14 ,7.14%);
 
 }
 
@@ -35,11 +35,7 @@ html body{
             font-size: 5vh;
             font-family: 'Nunito Sans', sans-serif;
             font-weight: bolder;
-            display: flex;
-            
-                
-            
-          
+            display: flex;       
 }
 .workshopButton{
     

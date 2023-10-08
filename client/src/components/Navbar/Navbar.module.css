@@ -14,11 +14,13 @@
 .navLinks {
     list-style: none;
     display: flex;
-    padding : 0 0 0 40vw; 
+    padding : 0 0 0 50vw; 
+    
 }
 
 .navLink {
-    margin: 0 2vw;
+   
+    margin: 0 1vw;
     text-decoration: none;
     list-style: none;
     padding: .5vw 1.5vw;
@@ -79,10 +81,19 @@
     font-size: 1.5vw;
     cursor: pointer;
     padding-top: 0.2vw;
+    position: relative;
+    left: 11vw;
 }
 
 @media screen and (max-width:769px) {
     .navLinks{
-        padding-left:0;
+        padding-left:20vw;
+    }
+    .button{
+       left: 14vw;
+       height: 4vw;
+       width: 4vw;
+       font-size: 3vw;
+       padding-top: 0.4vw;
     }
 }
