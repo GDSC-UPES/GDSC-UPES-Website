@@ -27,3 +27,10 @@
     margin: 0 1rem;
     transition: color 0.3s linear;
 }
+
+.socialMedia {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
