@@ -1,4 +1,3 @@
-
 import React,{useState,useEffect} from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
@@ -47,7 +46,7 @@ function App() {
         </div>
       ) : (
         <Routes>
-          <Route path="/" exact component={Home} />
+          <Route path="/" exact element={<Home/>} />
           <Route path="/events" component={Events} />
           <Route path="/team" component={Team} />
           <Route path="/contact" component={Contact} />
