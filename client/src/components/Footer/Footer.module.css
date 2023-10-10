@@ -27,3 +27,40 @@
     margin: 0 1rem;
     transition: color 0.3s linear;
 }
+
+.socialMediaIcon {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 24px;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.socialMediaIcon:hover {
+  transform: translateY(-3px);
+  color: #007bff;
+}
+
+.twitter:hover {
+  color: #1da1f2;
+}
+
+.instagram:hover {
+  color: #e1306c;
+}
+
+.linkedin:hover {
+  color: #0077b5;
+}
+
+.facebook:hover {
+  color: #1877f2;
+}
+
+.hashnode:hover {
+  color: #2962ff;
+}
+
+.github:hover {
+  color: #101010;
+}

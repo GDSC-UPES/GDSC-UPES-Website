@@ -1,81 +1,102 @@
 .navbar {
-    color: #000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
 }
 
 .logo {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .navLinks {
-    list-style: none;
-    display: flex;
-    padding : 0 0 0 40rem; 
+  list-style: none;
+  display: flex;
+  padding: 0 0 0 40rem;
 }
 
 .navLink {
-    margin: 0 20px;
-    text-decoration: none;
-    list-style: none;
-    padding: .5rem 1.5rem;
-    border: 2px solid #000;
-    border-radius:20px;
-    transition: all 0.3s ease 0s;
-    cursor: pointer;
+  margin: 0 20px;
+  text-decoration: none;
+  list-style: none;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid #000;
+  border-radius: 20px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  position: relative;
+}
+.navLink a {
+  text-decoration: none;
+  color: #000;
 }
 
-.navLink a{
-    text-decoration: none;
-    color: #000;
+.navLink::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #007bff;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.navLink:hover::before {
+  transform: scaleX(1);
 }
 
 .navLink:hover {
-    transform: translateY(-2px);
+  transform: translateY(-2px);
 }
 
 .navLink:active {
-    background-color: blue;
+  background-color: blue;
 }
 
 .navLink:nth-child(1) {
-    border-color: var(--red-color);
+  border-color: var(--red-color);
 }
 .navLink:nth-child(1):hover {
-    background-color: var(--red-color-light);
+  background-color: var(--red-color-light);
 }
 
 .navLink:nth-child(2) {
-    border-color: var(--blue-color);
+  border-color: var(--blue-color);
 }
 .navLink:nth-child(2):hover {
-    background-color: var(--blue-color-light);
+  background-color: var(--blue-color-light);
 }
 
 .navLink:nth-child(3) {
-    border-color: var(--green-color);
+  border-color: var(--green-color);
 }
 .navLink:nth-child(3):hover {
-    background-color: var(--green-color-light);
+  background-color: var(--green-color-light);
 }
 
 .navLink:nth-child(4) {
-    border-color: var(--yellow-color);
+  border-color: var(--yellow-color);
 }
 .navLink:nth-child(4):hover {
-    background-color: var(--yellow-color-light);
+  background-color: var(--yellow-color-light);
 }
 
 .button {
-    background-color:#000;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    border: none;
-    color:white;    
-    font-size: 1.5rem;
-    cursor: pointer;
-    padding-top: 0.2rem;
+  background-color: #000;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.25rem;
+}
+
+.button:hover {
+  transform: rotate(360deg);
+  transition: transform 0.5s ease-in-out;
 }
