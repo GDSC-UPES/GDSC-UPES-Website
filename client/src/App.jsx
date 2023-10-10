@@ -46,7 +46,7 @@ function App() {
         </div>
       ) : (
         <Routes>
-          <Route path="/" exact component={<Home/>} />
+          <Route path="/" exact element={<Home/>} />
           <Route path="/events" component={Events} />
           <Route path="/team" component={Team} />
           <Route path="/contact" component={Contact} />
