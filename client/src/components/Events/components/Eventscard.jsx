@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../Event.css"
 
-export default function Events_Card(props) {
+export default function Eventscard(props) {
 
   return (
     <>
