@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import "../Event.css"
 
 export default function Events_Card(props) {
-  const [completed, setcompleted] = useState(false);
 
   return (
     <>
