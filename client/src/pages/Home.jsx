@@ -7,7 +7,12 @@ import LinkedIn from '../static/LinkedIn.png';
 import Hashnode from '../static/Hashnode.png';
 import TwitterX from '../static/TwitterX.png';
 import GitHub from '../static/GitHub.png';
+import AboutUs from "../static/home-about.png"
+import Goal1 from "../static/home-goal-1.png"
+import Goal2 from "../static/home-goal-2.png"
+
 import { Link } from "react-router-dom";
+
 const Home = () => {
   return (
     <div className='flex flex-col'>
@@ -42,6 +47,7 @@ const Home = () => {
           </p>
         </div>
 
+
         <div className='flex flex-row'>
           <Link  to="#">
             <img src={Website} alt="Website" className='w-12 max-xs:w-7 max-sm:w-6 max-lg:w-8 max-xl:w-10  mr-10 max-xxs:mr-5 max-sm:mr-6 max-md:mr-8' />
@@ -72,6 +78,81 @@ const Home = () => {
         />
       </div>
     </div>
+        <div className="about-us-container">
+          <div class="ml-12 max-w-full mx-auto bg-white p-8">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-2/3 p-4">
+                    <h2 class="text-greyText drop-shadow-custom font-bold text-6xl max-xxs:text-xl max-sm:text-2xl max-md:text-3xl max-lg:text-4xl max-xl:text-5xl">About Us</h2>
+                    <p class="text-gray-600 mt-12 mr-24 text-2xl text-justify">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Integer eget justo a quam tincidunt ultricies. 
+                        Vivamus euismod eget nisl ac bibendum. Suspendisse
+                        non turpis at erat venenatis rhoncus.
+                    </p>
+                    <p class="text-gray-600 mt-6 mr-24 text-2xl text-justify">
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                      aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
+                      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+                      non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <p class="text-gray-600 mt-6 mr-24 text-2xl text-justify">
+                      Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, 
+                      adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore 
+                      magnam aliquam quaerat voluptatem.
+                    </p>
+                </div>
+                <div class="md:w-1/3 p-4 mt-8">
+                    <img src={AboutUs} class="w-full h-auto rounded" alt="About Us Image" />
+                </div>
+            </div>
+        </div>
+
+        <div className="goals-container">
+          <div className="ml-12 max-w-full mx-auto bg-white p-8">
+            <div class="flex flex-col md:flex-row">
+            <div class="md:w-2/3 p-4">
+              <h2 class="text-greyText drop-shadow-custom font-bold text-6xl max-xxs:text-xl max-sm:text-2xl max-md:text-3xl max-lg:text-4xl max-xl:text-5xl">Our Goals</h2>
+                <p class="text-gray-600 mt-12 mr-24 text-2xl text-justify">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Integer eget justo a quam tincidunt ultricies. 
+                  Vivamus euismod eget nisl ac bibendum. Suspendisse
+                  non turpis at erat venenatis rhoncus.
+                </p>
+                <p class="text-gray-600 mt-6 mr-24 text-2xl text-justify">
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
+                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+                  non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+              </div>
+              <div class="md:w-1/3 p-4 mt-8">
+                    <img src={Goal1} class="w-full h-auto rounded" alt="About Us Image" />
+              </div>
+            </div>
+          </div>
+          <div className="ml-12 max-w-full mx-auto bg-white p-8">
+            <div class="flex flex-col md:flex-row">
+            <div class="md:w-1/3 p-4 mt-8">
+                    <img src={Goal2} class="w-full h-auto rounded" alt="About Us Image" />
+              </div>
+              <div class="md:w-2/3 p-4">
+                <p class="text-gray-600 mt-12 mr-8 text-2xl text-justify">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Integer eget justo a quam tincidunt ultricies. 
+                  Vivamus euismod eget nisl ac bibendum. Suspendisse
+                  non turpis at erat venenatis rhoncus.
+                </p>
+                <p class="text-gray-600 mt-6 mr-8 text-2xl text-justify">
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
+                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+                  non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
     </div>
   );
 }
