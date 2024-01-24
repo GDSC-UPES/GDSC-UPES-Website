@@ -4,11 +4,12 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 
 // Import your pages or components for each route
-import Home from "./pages/Home";
-import Events from "./pages/Events";
+import Home from "./pages/Home/Home";
+import Events from "./pages/Events/Events";
 import Team from "./pages/Team";
-import Contact from "./pages/Contact";
+import EventsDetails from "./pages/Events-Details/EventsDetails";
 import "./App.css";
+
 function App() {
   const[isloading,setIsLoading]=useState(true);
   useEffect(()=>{
@@ -47,9 +48,9 @@ function App() {
       ) : (
         <Routes>
           <Route path="/" exact element={<Home />} />
-          <Route path="/events" component={Events} />
           <Route path="/team" element={<Team />} />
-          <Route path="/contact" component={Contact} />
+          <Route path="/events" element={<Events/>}/>
+          <Route path="/event-details" element={<EventsDetails/>}/>
         </Routes>
       )}
       <Footer />

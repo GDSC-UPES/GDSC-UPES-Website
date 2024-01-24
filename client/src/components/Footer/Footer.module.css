@@ -6,16 +6,17 @@
     padding:3rem;
 }
 .header{
-    padding: 1rem 2rem;
+    padding: 1rem ;
     background: #fff;
     position: relative;
     z-index: 1000;
-    font-size: 2rem;
+    font-size: 3.2rem;
+    /* margin-left: 1em; */
 }
 
 .para{
-    padding:1rem;
-    font-size: 1.2rem;
+    padding:1.2rem;
+    font-size: 1.5rem;
     font-weight: 500;
     color: #000;
     margin: 0 1rem;
@@ -63,4 +64,14 @@
 
 .github:hover {
   color: #101010;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+}
+
+.person {
+  width: 80%;
+  height: auto;
 }

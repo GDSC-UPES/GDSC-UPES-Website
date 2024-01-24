@@ -10,7 +10,8 @@ module.exports = {
         'redText':'#EA4335',
         'blueText': '#0060FF',
         'greenText': '#0D9C58',
-        'lineColor':'#C5C5C5'
+        'lineColor':'#C5C5C5',
+        
       },
       dropShadow:{
         'custom': '0px 4px 4px rgba(0, 0, 0, 0.25)',
