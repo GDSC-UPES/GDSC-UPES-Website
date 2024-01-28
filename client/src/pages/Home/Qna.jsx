@@ -7,7 +7,7 @@ const Qna = () => {
 const [activeIndex,setActiveIndex]=useState(null);
 const faqData=[
   {
-  question:'This is a question 1 ?',
+  question:'This is a question 1?',
   answer:'This is the answer 1',
 },
 {
@@ -33,26 +33,42 @@ const faqOpen=(index)=>{
 };
 
   return (
-    <div>
+    <div className='overflow-hidden'>
       <div className='bg-lineColor border-solid w-full h-[1.5px]'><hr></hr></div>
-        {/* <div className='w-[50%] max-xs:w-full ml-24 max-xxs:ml-2 max-xs:ml-4 max-md:ml-10 max-lg:ml-12 max-xl:ml-16 py-20 max-xxs:py-0 max-xs:py-2 max-md:py-10 max-lg:py-14 mt-8 max-xxs:mt-2 max-xs:mt-4 max-lg:mt-6'> */}
-            <div className='flex flex-col text-greyText drop-shadow-custom text-6xl font-bold  mt-10 max-xxs:mt-2 max-xs:mt-4 max-lg:mt-6 ml-24 pt-20'>
-          {/* <div className='text-greyText drop-shadow-custom flex leading-normal '> */}
-                <p>You Ask, We Answer!</p>
-              {/* </div> */}
-            {/* </div> */}
+      <div className='w-full px-20 mx-xxs:ml-5 max-xs:px-7   pt-20 max-xxs:pt-2 max-xs:pt-4 max-lg:mt-6'>
+          <div className='text-greyText drop-shadow-custom  font-bold text-6xl max-xxs:text-xl max-sm:text-2xl max-md:text-3xl max-lg:text-4xl max-xl:text-5xl px-0 max-xs:px-5 max-sm:px-10 max-md:px-10 max-lg:px-10 max-xl:px-20'>
+              <p>You Ask, We Answer!</p>
+          </div>
           </div>
           <div className="flex flex-col">
-          <div className="flex flex-row">
-          <div className='w-[60%] max-xs:w-full ml-24 max-xxs:ml-2 max-xs:ml-4 max-md:ml-10 max-lg:ml-12 max-xl:ml-16 py-20 max-xxs:py-0 max-xs:py-2 max-md:py-10 max-lg:py-14 '>
-          <div className='flex leading-normal text-greenText font-bold text-3xl'>
+          <div className="flex flex-row max-xs:flex-col">
+          {/* <div className='w-[60%] max-xs:w-[100%] px-20  py-20 max-xxs:py-0 max-xs:py-2 max-md:py-10 max-lg:py-14 max-xs:mt-2'>
+          <div className='flex leading-normal text-greenText font-bold text-3xl max-xxs:text-xl max-sm:text-2xl '>
                 <p>What is GDSC?</p>
           </div>
-          <div className='flex leading-normal text-greyText text-2xl'>
+          <div className='flex leading-normal text-greyText text-2xl max-xs:text-justify  '>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu </p>
             </div>
-        </div>
-        <img src={QnA1} alt="image-1" className='h-50 w-50' />
+          <div className='flex leading-normal max-xs:text-justify  text-2xl max-xs:text-xs max-sm:text-xl max-md:text-2xl max-lg:text-3xl max-xl:text-4xl mt-4 max-xxs:mt-1 max-xs:mt-2 max-sm:mt-3 '>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu </p>
+         </div>
+        </div> */}
+        <div className='w-full px-20 mx-xxs:ml-5 max-xs:px-7  py-20 max-xxs:py-2 max-xs:py-4 max-md:py-10 max-lg:py-14 mt-8 max-xxs:mt-2 max-xs:mt-4 max-lg:mt-6'>
+        <div className=" drop-shadow-custom">
+          <div className='flex flex-col max-xs:flex-row max-md:flex-row  max-sm:flex-row font-bold text-3xl max-xxs:text-xl max-sm:text-2xl max-md:text-3xl max-lg:text-4xl max-xl:text-5xl px-0 max-xs:px-5 max-sm:px-10 max-md:px-10 max-lg:px-10 max-xl:px-20'>
+            <div className='text-greenText flex leading-normal '>
+              <p>What is GDSC?</p>
+            </div>
+          </div>
+         <div className='"text-greyText flex leading-normal max-xs:text-justify  text-2xl max-xs:text-xs max-sm:text-xl max-md:text-2xl max-lg:text-3xl max-xl:text-4xl mt-4 max-xxs:mt-1 max-xs:mt-2 max-sm:mt-3 px-0 max-xs:px-5 max-xs:mr-5  max-md:px-10 max-lg:px-10 max-xl:px-20'>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu </p>
+         </div>
+         <br></br>
+         </div>
+         </div>
+        
+        <img src={QnA1} alt="image-1" className='h-50 w-50 max-xss:h-10 max-xxs:w-30' />
+
         </div>
         <div className="faq-section w-[70%] ml-20">
           {faqData.map((item,index)=>(

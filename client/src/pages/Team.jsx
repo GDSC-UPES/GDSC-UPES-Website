@@ -3,6 +3,7 @@ import speaker from "../static/speaker.png"
 import { Link } from "react-router-dom";
 import LinkedIn from "../static/LinkedIn.png"
 import GitHub from "../static/GitHub.png"
+
 function Team() {
   return<div style={{backgroundColor: "#fff5da", padding:"2rem"}}>
     <div className='flex justify-center text-[2rem]'>
