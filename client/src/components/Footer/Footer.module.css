@@ -6,16 +6,20 @@
     padding:3rem;
 }
 .header{
-    padding: 1rem 2rem;
-    background: #fff;
+    padding: 1rem ;
     position: relative;
     z-index: 1000;
-    font-size: 2rem;
-}
+    font-size: 3.2rem;
+    /* margin-left: 1em; */
+  }
 
+  .textWhite {
+    color: white;
+  }
+  
 .para{
-    padding:1rem;
-    font-size: 1.2rem;
+    padding:1.2rem;
+    font-size: 1.5rem;
     font-weight: 500;
     color: #000;
     margin: 0 1rem;
@@ -42,7 +46,7 @@
 }
 
 .twitter:hover {
-  color: #1da1f2;
+  color: #1da1f2 ; 
 }
 
 .instagram:hover {
@@ -63,4 +67,45 @@
 
 .github:hover {
   color: #101010;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+}
+
+.person {
+  width: 80%;
+  height: auto;
+}
+
+@media only screen and (max-width: 576px) {
+  .footer{
+    margin-left: 9rem;
+    padding-top: 0%;
+    margin-bottom: 0%;
+    display:flex;
+    flex-direction: column;
+}
+  .header{
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 1rem ;
+   
+  }
+
+.para{
+  text-align: center;
+  padding:0.2rem;
+    margin: 0 5rem;
+
+}
+.socialMedia {
+  text-align: center;
+  margin-bottom: 0%;
+
+}
+.socialMedia a{
+  font-size: 2rem;
+}
 }
